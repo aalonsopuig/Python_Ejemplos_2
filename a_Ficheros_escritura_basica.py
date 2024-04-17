@@ -2,9 +2,8 @@
 Programa: Escritura básica de fichero
 El programa escribe tres líneas en un fichero en disco
 '''
-ruta_archivo = 'Documentos/mi_archivo.txt'
 # Abrir el archivo en modo de escritura ('w' crea un nuevo archivo o sobrescribe si ya existe)
-archivo = open(ruta_archivo, 'w')
+archivo = open('mi_archivo.txt', 'w')
 
 # Escribir tres líneas en el archivo
 archivo.write('Primera línea\n')

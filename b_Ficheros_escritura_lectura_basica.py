@@ -37,4 +37,4 @@ finally:
 # Imprimir las líneas leídas del archivo
 print("Contenido del archivo:")
 for linea in lineas:
-    print(linea)  # La función print añade por defecto un salto de línea, por eso usamos end='' para evitar líneas extra.
+    print(linea, end='')  # La función print añade por defecto un salto de línea, por eso usamos end='' para evitar líneas extra.
