@@ -1,24 +1,23 @@
-# Programa de Lista de Compras con almacenamiento aditivo en Archivo 
+# Programa de Lista de Compras con Almacenamiento en Archivo
 # Este programa permite al usuario añadir artículos a una lista de la compra de manera interactiva.
 # Los artículos son almacenados en un archivo de texto. Una vez que el usuario termina de añadir artículos,
 # el programa lee el archivo y muestra todos los artículos almacenados.
-# En caso de que el archivo ya tenga artículos, los añadirá
+# Utiliza entorno gráfico para solicitar el fichero
 
-import os  # Se importa el módulo os para verificar la existencia del archivo
+import tkinter as tk
+from tkinter import filedialog
 
-# Nombre del archivo donde se almacenará la lista de la compra
-nombre_archivo = 'lista_de_compras.txt'
+#crea ventana principal de tkinter (no visible para el usuario)
+root=tk.Tk()
+root.withdraw() #oculta la ventana principal
 
-# Verificar si el archivo ya existe
-if os.path.exists(nombre_archivo):
-    modo_apertura = 'a' 
-else:
-    modo_apertura = 'w' 
+#Mostramos cuadro de diálogo para seleccionar archivo
+nombre_archivo = filedialog.asksaveasfilename(title="Seleccionar archivo")
 
 # Solicitamos al usuario que introduzca elementos en la lista de la compra
 try:
-    # Abrimos el archivo en el modo adecuado para almacenar los elementos
-    archivo = open(nombre_archivo, modo_apertura, encoding='utf-8')
+    # Abrimos el archivo en modo de escritura para almacenar los elementos
+    archivo = open(nombre_archivo, 'a', encoding='utf-8')
     
     while True:
         elemento = input("Introduce un artículo a la lista de la compra o '0' para terminar: ")

@@ -7,7 +7,7 @@ archivo = open('mi_archivo.txt', 'w')
 
 # Escribir tres líneas en el archivo
 archivo.write('Primera línea\n')
-archivo.write('Segunda línea\n')
+archivo.write('segunda línea\n')
 archivo.write('Tercera línea\n')
 
 # Cerrar el archivo manualmente

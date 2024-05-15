@@ -10,10 +10,10 @@ nombre_archivo = 'mi_archivo.txt'
 # Intentamos abrir el archivo y escribir en él
 try:
     # Abrimos el archivo en modo de escritura ('w' para escritura)
-    archivo = open(nombre_archivo, 'w')
+    archivo = open(nombre_archivo, 'w', encoding='utf-8')
     # Escribimos tres líneas en el archivo
     archivo.write('Primera línea\n')
-    archivo.write('Segunda línea\n')
+    archivo.write('Novenadd línea\n')
     archivo.write('Tercera línea\n')
 except IOError:
     print("Se produjo un error al escribir en el archivo.")
@@ -24,7 +24,7 @@ finally:
 # Intentamos abrir el archivo y leer de él
 try:
     # Abrimos el archivo en modo de lectura ('r' para lectura)
-    archivo = open(nombre_archivo, 'r')
+    archivo = open(nombre_archivo, 'r', encoding='utf-8')
     # Leemos las líneas del archivo
     lineas = archivo.readlines()
 except IOError:
