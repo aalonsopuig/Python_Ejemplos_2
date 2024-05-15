@@ -23,7 +23,7 @@ el programa lee el archivo y muestra todos los artículos almacenados.<BR>
 Utiliza entorno gráfico para solicitar el fichero<BR>
 
 <p align="center">
-  <img src="https://github.com/aalonsopuig/Python_Ejemplos_2/assets/57196844/15b7851a-0bd1-4a98-8b1a-7facd61b72c4">
+  <img width="640" src="https://github.com/aalonsopuig/Python_Ejemplos_2/assets/57196844/15b7851a-0bd1-4a98-8b1a-7facd61b72c4">
 </p>
 
 - **e_Graficas_tension_arterial.py**
@@ -34,7 +34,7 @@ niveles normales. Este ejemplo sirve para demostrar cómo los cambios en la pres
 ser visualizados de manera efectiva usando gráficas de líneas.
 
 <p align="center">
-  <img src="https://github.com/aalonsopuig/Python_Ejemplos_2/assets/57196844/1cce7025-2bde-4660-8ead-39441b748880">
+  <img width="640" src="https://github.com/aalonsopuig/Python_Ejemplos_2/assets/57196844/1cce7025-2bde-4660-8ead-39441b748880">
 </p>
 
 
