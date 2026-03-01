@@ -11,16 +11,10 @@ import os  # Se importa el módulo os para verificar la existencia del archivo
 # Nombre del archivo donde se almacenarán las presiones
 nombre_archivo = 'presiones_arteriales.txt'
 
-# Verificar si el archivo ya existe
-if os.path.exists(nombre_archivo):
-    modo_apertura = 'a' 
-else:
-    modo_apertura = 'w' 
-
 # Añadimos las presiones arteriales al archivo según se introducen por teclado
 try:
     # Abrimos el archivo en el modo adecuado para almacenar los elementos
-    archivo = open(nombre_archivo, modo_apertura, encoding='utf-8')
+    archivo = open(nombre_archivo, 'a', encoding='utf-8')
    
     while True:
         # Pedir al usuario que introduzca la presión sistólica o termine el proceso

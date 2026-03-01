@@ -13,7 +13,7 @@ try:
     archivo = open(nombre_archivo, 'w', encoding='utf-8')
     # Escribimos tres líneas en el archivo
     archivo.write('Primera línea\n')
-    archivo.write('Novenadd línea\n')
+    archivo.write('Segunda línea\n')
     archivo.write('Tercera línea\n')
 except IOError:
     print("Se produjo un error al escribir en el archivo.")
